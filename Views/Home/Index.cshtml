@@ -1,0 +1,22 @@
+﻿@model AzureASPNETApp.Models.Customer
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form method="post" action="CreateToken" enctype="multipart/form-data">
+    <div>
+        <h5>Input e-mail</h5>
+        <input type="email" name="Mail" />
+    </div>
+    <div>
+        <h5>Upload file (only .docx)</h5>
+        <input type="file" id="fileInput" accept=".docx" name="CustomerFile" />
+    </div>
+    <div>
+        <h5></h5>
+        <button type="submit" class="btn btn-primary">Create token</button>
+    </div>
+</form>
+
+
+
